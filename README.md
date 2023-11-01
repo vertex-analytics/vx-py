@@ -4,7 +4,7 @@
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
 | vx_bind.pyd     | C0                      |
-| Linux       | API C0                             |
+| vx_bind.so       | C0                             |
 | Python       |  3.9                               |
 
 
