@@ -3,8 +3,8 @@
 
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| Windows      | API B9                      |
-| Linux       | API B9                             |
+| Windows      | API C0                      |
+| Linux       | API C0                             |
 | Python       |  3.9                               |
 
 
