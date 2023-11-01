@@ -3,7 +3,7 @@
 
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| Windows      | API C0                      |
+| vx_bind.pyd     | C0                      |
 | Linux       | API C0                             |
 | Python       |  3.9                               |
 
