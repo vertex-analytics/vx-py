@@ -1,4 +1,4 @@
-# vX-py
+# vx-py
 
 Windows and linux release compiled for Python version 3.9
 
