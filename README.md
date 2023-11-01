@@ -1,4 +1,12 @@
-# vx-py
+# vx-py 
+
+
+| File             | Version                               |
+| ---------------- |-----------------------------------------|
+| Windows      | API B9                      |
+| Linux       | API B9                             |
+| Python       |  3.9                               |
+
 
 Windows and linux release compiled for Python version 3.9
 
