@@ -3,8 +3,8 @@
 
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| vx_bind.pyd     | C0                      |
-| vx_bind.so       | C0                             |
+| vx_bind.pyd     | C1                      |
+| vx_bind.so       | C1                             |
 | Python       |  3.9                               |
 
 
