@@ -1,31 +1,35 @@
 # vX-py
 
-This is a windows and linux release compiled for Python version 3.9
+Windows and linux release compiled for Python version 3.9
 
-This api attempts to closely match the vx.javascript api.
+### Included Files
 
-Files:
-
-vx_bind.pyd	:	Windows c++ Python binding module
-vx_bind.so	:	Linux c++ Python binding module
+| File             | Description                             |
+| ---------------- |-----------------------------------------|
+| vx_bind.pyd      | Windows c++ Python binding module                  |
+| vx_bind.so       | Linux c++ Python binding module     |
+| vx_feed.py       | vx_bind definitions include file    |
+| vx_demo.py       | Sample application    |
 
 Place the module in your Python installation or in your script's search path or at the location of your script.
 
-vx_feed.py	:	vx_bind definitions include file
+### vx_feed.py
 
-	Event record enumerated values
-	Event record definitions
-	Default fid definitions
+vx_bind definitions includes
 
-vx_demo.py	:	Sample application
+* Event record enumerated values
+* Event record definitions
+* Default fid definitions
+
+### vx_demo.py 
 
 Application overview:
 
-1) Derive a class from   vx.feed
+#### 1. Derive a class from   vx.feed
 
 	myFeed = MyFeed()
 
-2) Call 'request' with a dictionary of request parameters.
+#### 2. Call 'request' with a dictionary of request parameters.
 
 	myFeed.request ({
 		'symbol'		:	'ES',		
@@ -48,40 +52,33 @@ Application overview:
 	'cacheRead' is optional and defaults to True, Set to False to recreate the archive
 	'cacheName' is optional and defaults to name of the fids, Custom cache file name
 
-2) Override the following  functions:
+#### 3. Override the following  functions:
 
-	def onInit(self,pData):
-	#called when the script starts
-	#pData unused
-
-	def onExit(self,pData):	
-	#called at the script is finished
-	#pData unused
-
-	def onOpen(self,pData):
-	#called at the start of each session of data
-	#pData will contain a diction of meta data
-
-	def onShut(self,pData):
-	#called at the start of each session of data
-	#pData unused
-
-	def onEvent(self,pData,pEvent):
-	#called with retrieved event records
-	#pData will contain meta data
-	#pEvent will contain a diction of Event fids (see vx_feed.py)
-
-	def onProgress(self,pData):
-	#called during the reading of the request
-	#pData progress info
-
-	def onError(self,pData):
-	#called if an error has occurred
-	#pData error info
-
-	def onIdle(self,pData):
-	#called during idle for RT queries
-	#pData unused
+##### def onInit(self,pData):
+	Called when the script starts
+	pData unused
+##### def onExit(self,pData):	
+	Called at the script is finished
+	pData unused
+##### def onOpen(self,pData):
+	Called at the start of each session of data
+	pData will contain a diction of meta data
+##### def onShut(self,pData):
+	Called at the start of each session of data
+	pData unused
+##### def onEvent(self,pData,pEvent):
+	Called with retrieved event records
+	pData will contain meta data
+	pEvent will contain a diction of Event fids (see vx_feed.py)
+##### def onProgress(self,pData):
+	Called during the reading of the request
+	pData progress info
+##### def onError(self,pData):
+	Called if an error has occurred
+	pData error info
+##### def onIdle(self,pData):
+	Called during idle for RT queries
+	pData unused
 
 
 
