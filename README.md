@@ -3,7 +3,7 @@
 
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| vx_bind.pyd     | C4                      |
+| vx_bind.pyd     | C5                     |
 | vx_bind.so       | C4                             |
 | Python       |  3.9                               |
 
@@ -18,6 +18,11 @@ Windows and linux release compiled for Python version 3.9
 | vx_bind.so       | Linux c++ Python binding module     |
 | vx_feed.py       | vx_bind definitions include file    |
 | vx_demo.py       | Sample application    |
+| icebergOrders.py      | Demonstrates the iceberg trigger    |
+| stopOrders.py			| Demonstrates the stopOrder trigger    |
+| trades.py				| Demonstrates the trade trigger    |
+| tradeSweeps.py		| Demonstrates the tradeSweeps trigger    |
+| x_book.py				| Demonstrates the book building functions     |
 
 Place the module in your Python installation or in your script's search path or at the location of your script.
 
@@ -87,8 +92,3 @@ Application overview:
 ##### def onIdle(self,pData):
 	Called during idle for RT queries
 	pData unused
-
-
-
-
-
