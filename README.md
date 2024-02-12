@@ -17,12 +17,12 @@ Windows and linux release compiled for Python version 3.9
 | vx_bind.pyd      | Windows c++ Python binding module                  |
 | vx_bind.so       | Linux c++ Python binding module     |
 | vx_feed.py       | vx_bind definitions include file    |
-| vx_demo.py       | Sample application    |
-| icebergOrders.py      | Demonstrates the iceberg trigger    |
-| stopOrders.py			| Demonstrates the stopOrder trigger    |
-| trades.py				| Demonstrates the trade trigger    |
-| tradeSweeps.py		| Demonstrates the tradeSweeps trigger    |
-| x_book.py				| Demonstrates the book building functions     |
+| demo_events.py       | Sample application    |
+| demo_icebergOrders.py      | Demonstrates the iceberg trigger    |
+| demo_stopOrders.py			| Demonstrates the stopOrder trigger    |
+| demo_trades.py				| Demonstrates the trade trigger    |
+| demo_tradeSweeps.py		| Demonstrates the tradeSweeps trigger    |
+| demo_book.py				| Demonstrates the book building functions     |
 
 Place the module in your Python installation or in your script's search path or at the location of your script.
 
