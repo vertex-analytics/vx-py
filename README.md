@@ -1,12 +1,10 @@
 # vx-py 
 
-
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| vx_bind.pyd     | C5                     |
+| vx_bind.pyd     | C6                     |
 | vx_bind.so       | C4                             |
 | Python       |  3.9                               |
-
 
 Windows and linux release compiled for Python version 3.9
 
@@ -23,6 +21,7 @@ Windows and linux release compiled for Python version 3.9
 | demo_trades.py				| Demonstrates the trade trigger    |
 | demo_tradeSweeps.py		| Demonstrates the tradeSweeps trigger    |
 | demo_book.py				| Demonstrates the book building functions     |
+| demo_fix.py				| Demonstrates the fix REST api     |
 
 Place the module in your Python installation or in your script's search path or at the location of your script.
 
@@ -34,7 +33,7 @@ vx_bind definitions includes
 * Event record definitions
 * Default fid definitions
 
-### vx_demo.py 
+### demo_events.py 
 
 Application overview:
 
