@@ -51,8 +51,9 @@ class MyFeed(vx.feed):
 	def onBucket(self,pData):
 		
 		tBucket = pData["bucket"]	
-			
-		if (tBucket==Bucket.Trades)	:
+		print (pData);
+		
+		if (tBucket==Bucket.Summary)	:
 			
 			tTime = datetime.fromtimestamp (pData['time']/1000);
 			tDate = tTime.isoformat(sep=' ', timespec='milliseconds')
@@ -90,8 +91,8 @@ def test():
 		'password'			:	'password',		
 		'symbol'			:	'ZS',		
 		'startDate'			:	20230501,
-		'endDate'			:	20230502,
-		'buckets'			:	Bucket.Trades,
+		'endDate'			:	20230501,
+		'buckets'			:	Bucket.Summary,
 		'interval'			:	1000*60*60,	#one hour
 		'weekends'			:	False,
 		'realtime'			:	True,

@@ -102,6 +102,10 @@ class Trigger(IntEnum):
 	TradeSweeps					= 2
 	StopOrders					= 4
 	Trades						= 8
+	Summary						= 16
+
+class Bucket(IntEnum):
+	Summary						= 1
 
 class Session(IntEnum):
 	Current						= 0

@@ -56,6 +56,7 @@ class MyFeed(vx.feed):
 			
 		if (tTrigger==Trigger.Summary)	:
 			if self.fTrigRows < 100	:
+				print (pData)
 				print(	"Summary: "
 						"time:%(time)d,"
 						"aggressor:%(aggressor)d,"
@@ -83,14 +84,15 @@ def test():
 		'email'				:	'xx@zz.com',
 		'password'			:	'password',		
 		'symbol'			:	'ZS',		
-		'startDate'			:	20240216,
-		'endDate'			:	20240216,
+		'startDate'			:	20230501,
+		'endDate'			:	20230501,
 		'triggers'			:	Trigger.Summary,
 		'weekends'			:	False,
 		'realtime'			:	True,
 		'fids'				:	'kFidsTrds',
 		'cachePath'			:	'E:\\_vx',
-		'cacheRead'			:	True	
+		'cacheRead'			:	True,	
+		'progress'			:	1	
 	})
 	
 	
