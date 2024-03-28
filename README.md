@@ -2,7 +2,7 @@
 
 | File             | Version                               |
 | ---------------- |-----------------------------------------|
-| vx_bind.pyd     | C9                     |
+| vx_bind.pyd     | D0                     |
 | vx_bind.so       | C4                             |
 | Python       |  3.9                               |
 
@@ -26,6 +26,10 @@ Windows and linux release compiled for Python version 3.9
 | demo_buckets.py				| Demonstrates the summary buckets     |
 
 Place the module in your Python installation or in your script's search path or at the location of your script.
+
+### Version D0 Changes
+
+Fixed a bug with waiting on request with no records.
 
 ### Version C9 Changes
 
